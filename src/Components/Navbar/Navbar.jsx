@@ -1,16 +1,27 @@
 import React from 'react';
+import {useState } from 'react' 
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png'
 import './Navbar.css'
 
 export const Navbar = ({ user }) => {
+  const [active, setActive] = useState("") 
+
   return (
     <header className="header">
       <div className="navbar-container">
         <div className="header-content">
           <div className="logo">
-            <Link to="/">
-              <span className="gradient-text">Health Care</span>
-            </Link>
+        
+            <Link to="/" className='flex items-center gap-2' onClick={()=>{
+          setActive(""); // Clear the 'active' state
+          window.scrollTo(0,0); // Scroll to the top of the page
+        }}>
+          <img loading="lazy" src={logo} alt='logo' className='logo-image'/>
+          <p className="gradient-text">Medico</p>
+
+        </Link>
+            
           </div>
           <nav>
             <ul className="nav-link">

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Home.css';
+import './Home.css'; 
+import aboutPhoto from '../../assets/images/about.jpg'
 
 
 export const Home = () => {
@@ -21,6 +22,45 @@ export const Home = () => {
  </button>
         </div>
       </div>
+
+      <section className="about">
+        <div className="about-container">
+            <div class="flex flex-between">
+                <div className="flex-item-50">
+                    <h2 className='about-heading' >We are always ensure best medical treatment for your health</h2>
+                    <p className="about-pargraph">Our mission is to provide the highest quality medical care and ensure the well-being of our patients</p>
+                    <ul className='about-list'>
+                        <li>
+                            <i className="about-icon fa-regular fa-circle-check"></i>
+                            <span className='about-item'>You can trust us for your healthcare needs, as we are dedicated to excellence in patient care.
+                            </span>
+                        </li>
+                        <li>
+                            <i className="about-icon fa-regular fa-circle-check"></i>
+                            <span className='about-item'> 
+                            Our dedicated team are professionals  and personalized care.
+                            </span>
+                        </li>
+                        <li>
+                            <i className=" about-icon fa-regular fa-circle-check"></i>
+                            <span className='about-item'>Our goal is to provide you with the best medical treatment, ensuring your comfort.
+                            </span>
+                        </li>
+                    </ul>
+                    <button className='about-btn'>more about us</button>
+
+                </div>
+                <div className="flex-item flex-item-50 ">
+                <div class="image-container">
+                 <img class="about-img" alt="error" src={aboutPhoto} />
+                 </div>
+                  </div>
+                </div>
+
+                
+            </div>
+        
+    </section>
     </>
   );
 };
