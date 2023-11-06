@@ -12,7 +12,6 @@ export const Register = () => {
   let [statusError, setStatusError] = useState('');
   let navigate = useNavigate();
 
-
   const schema = Yup.object({
     userName: Yup.string()
       .required("Name is required")
@@ -23,11 +22,15 @@ export const Register = () => {
       .email("Not a valid email"),
     password: Yup.string()
       .required("Password is required")
-      .matches(/^[A-Z][a-z0-9]{3,7}$/, "Password format is invalid"),
+      .matches(
+        /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!])[A-Za-z\d@#$%^&+=!]{8,}$/,
+        "Password must be strong (at least 8 characters, one uppercase, one lowercase, one digit, and one special character)"
+      ),
     cPassword: Yup.string()
       .required("Confirm password is required")
       .oneOf([Yup.ref('password')], "Passwords must match"),
   });
+  
 
   async function sendRegisterData(values) {
     try {

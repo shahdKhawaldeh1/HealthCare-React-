@@ -17,7 +17,7 @@ export const Navbar = ({ user }) => {
           setActive(""); // Clear the 'active' state
           window.scrollTo(0,0); // Scroll to the top of the page
         }}>
-          <img loading="lazy" src={logo} alt='logo' className='logo-image'/>
+          {/* <img loading="lazy" src={logo} alt='logo' className='logo-image'/> */}
           <p className="gradient-text">Medico</p>
 
         </Link>

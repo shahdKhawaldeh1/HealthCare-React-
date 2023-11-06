@@ -188,7 +188,6 @@ ul {
       transform: scale(1.1);
     }
   }
-  /* Home.css */
 
 .home-content {
     animation: fadeIn 1s ease forwards;
@@ -209,31 +208,21 @@ ul {
   margin: auto;
 }
 
-
-.flex-between {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   justify-content: space-between;
 }
-.flex {
-display: flex;
-
-}
-.about .flex {
-  gap: 80px;
-}
-.flex-item-50 {
-  width: 50%;
-}
-
 
 .about-heading {
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
   padding: 20px;
   font-weight: bold;
-  border-left: 4px solid #007BFF;
+  border-left: 4px solid var(--blue-color); ;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-transform: capitalize;
-
 }
 
 .about-pargraph {
@@ -241,29 +230,22 @@ display: flex;
   font-size: 20px;
 }
 
-
 .about-icon {
   font-size: 30px;
   margin-right: 10px;
-  color: #007BFF;
+  color: var(--blue-color); }
 
-}
-.about-item{
+.about-item {
   color: rgb(72, 70, 70);
   font-weight: 300;
   font-size: 25px;
-
 }
-
-
 
 .image-container {
   position: relative;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Add a shadow for a realistic effect */
-   
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Define a CSS animation called 'moveImage' */
 @keyframes moveImage {
   0% {
     transform: translateX(0);
@@ -288,7 +270,7 @@ display: flex;
   position: relative;
   width: 200px;
   height: 40px;
-  background-color: #4665dd;
+  background-color:var(--blue-color); ;
   display: flex;
   align-items: center;
   color: white;
@@ -300,7 +282,7 @@ display: flex;
   text-transform: capitalize;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 40px; /* Adjust the margin to control the space between the button and the list */
+  margin-top: 40px; 
 
 }
 
@@ -343,3 +325,66 @@ display: flex;
 }
 
 
+/* start services */
+.services-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  max-width: 1300px;
+}
+.section-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--blue-color);   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+}
+
+.services-section {
+  text-align: center;
+}
+
+.services-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.service {
+  margin: 70px auto 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 20px var(--blue-color); ;
+  border-radius: 50%;
+  padding: 10px;
+  height: 220px;
+  width: 220px;
+  text-transform: capitalize;
+  transition: 0.3s;
+  gap: 1rem;
+  box-shadow: -7px -20px 20px rgb(0 0 0 / 20%);
+  border: 3px solid #4665dd; 
+}
+
+.service:hover {
+  transform: scale(1.13);
+  background-color: rgba(86, 117, 171, 0.6);
+}
+
+.service span {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.service i {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--blue-color); }
