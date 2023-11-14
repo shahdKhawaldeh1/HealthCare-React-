@@ -30,6 +30,11 @@ export const Navbar = ({ user }) => {
                   Home
                 </Link>
               </li>
+              <li>
+                <Link className="nav-item" to="/popular">
+                  Popular
+                </Link>
+              </li>
               {user ? (
                 <>
                   <li>

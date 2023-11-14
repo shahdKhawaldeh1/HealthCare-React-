@@ -10,6 +10,7 @@ import { jwtDecode } from 'jwt-decode';
 import { useState, useEffect } from 'react';
 import { Services } from './Components/Services/Services';
 import { Footer } from './Components/Footer/Footer';
+import FAQContainer from './Components/FAQItem/FAQContainer';
 // import { Contact } from './Components/Contact/Contact';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path='register' element={<Register />} />
         <Route path='services' element={<Services />} />
          {/* <Route path='contact' element={<Contact/>} /> */}
+         <Route path='popular' element={<FAQContainer/>}/>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer/>
