@@ -340,3 +340,96 @@
     }
   }
   
+  /* Media query for large screens (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .form {
+      max-width: 800px; 
+      margin: 30px auto 0; 
+      padding: 50px; 
+      border: 2px solid #ccc; 
+      border-radius: 10px; 
+      background-color: #f0f0f0; 
+  }
+
+  .heading {
+      font-size: 36px; 
+      margin-bottom: 40px;
+      color: #333; 
+  }
+
+  .input-icon i {
+      font-size: 24px;
+      color: #555;
+  }
+
+  .form-control {
+      width: calc(100% - 60px);
+      padding: 20px 30px 10px 60px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc; 
+      border-radius: 8px; 
+      font-size: 18px;
+  }
+
+
+  .uiverse {
+      font-size: 18px;
+      padding: 12px 24px; 
+  }
+
+  .uiverse .wrapper span {
+      font-size: 24px;
+
+    }
+
+  .uiverse .wrapper .circle {
+      width: 60px; 
+      height: 60px; 
+  }
+}
+ /* Media query for small screens (up to 767px) */
+@media only screen and (max-width: 767px) {
+  .form {
+      max-width: 100%; 
+      margin: 20px auto 0; 
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px; 
+      background-color: #fff; 
+  }
+
+  .heading {
+      font-size: 24px; 
+      margin-bottom: 20px; 
+      color: #333; 
+  }
+
+  .input-icon i {
+      font-size: 18px; 
+      color: #555; 
+  }
+
+  .form-control {
+      width: calc(100% - 20px); 
+      padding: 15px;
+      margin-bottom: 15px; 
+      border: 1px solid #ddd; 
+      border-radius: 6px;
+      font-size: 16px; 
+  }
+
+
+  .uiverse {
+      font-size: 16px; 
+      padding: 10px 20px; 
+  }
+
+  .uiverse .wrapper span {
+      font-size: 18px;
+  }
+
+  .uiverse .wrapper .circle {
+      width: 40px; 
+      height: 40px; 
+  }
+}

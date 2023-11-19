@@ -130,3 +130,76 @@
     font-size: 40px;
   }
   
+
+  /* Media query for small screens (up to 767px) */
+@media only screen and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-item {
+        height: 200px;
+    }
+
+    .modal-content {
+        max-width: 100%;
+    }
+}
+/* Media query for medium screens (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Add specific styles for medium screens here */
+
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .grid-item {
+        height: 250px;
+    }
+
+    .modal-content {
+        max-width: 80%;
+    }
+
+    .modal-img {
+        max-height: 50vh;
+    }
+
+    .modal-link {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .health-link {
+        font-size: 16px;
+    }
+}
+/* Media query for large screens (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Add specific styles for large screens here */
+
+    .grid-container {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .grid-item {
+        height: 300px;
+    }
+
+    .modal-content {
+        max-width: 60%;
+    }
+
+    .modal-img {
+        max-height: 60vh;
+    }
+
+    .modal-link {
+        padding: 10px 24px;
+        font-size: 18px;
+    }
+
+    .health-link {
+        font-size: 18px;
+    }
+}

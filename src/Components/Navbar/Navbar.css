@@ -37,20 +37,20 @@
     justify-content: space-between;
   }
   
-.logo {
+/* .logo {
     display: flex;
     flex-basis: 40%;
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
 
-  }
+  } */
   
-.logo-image {
+/* .logo-image {
   width: 110px;
   height: 100px;
   object-fit: contain;
-}
+} */
 
   .gradient-text {
     color: aliceblue;
@@ -134,3 +134,51 @@
   
   /* End Contact Button */
   
+
+  /* Media query for small screens (up to 767px) */
+@media only screen and (max-width: 767px) {
+  .header-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .gradient-text {
+      margin-top: 20px; 
+      font-size: 24px; 
+  }
+
+  .nav-link {
+      flex-basis: 100%;
+      justify-content: center;
+  }
+
+  .nav-item {
+      margin: 0;
+      font-size: 18px; 
+      margin-bottom: 15px; 
+  }
+
+  .contact-btn {
+      margin-left: 0;
+      margin-top: 15px; 
+  }
+}
+/* Media query for large screens (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-content {
+      padding: 15px;
+  }
+
+  .gradient-text {
+      font-size: 28px; 
+  }
+
+  .nav-item {
+      font-size: 22px; 
+      margin-left: 30px; 
+  }
+
+  .contact-btn {
+      padding: 12px 30px; 
+  }
+}
