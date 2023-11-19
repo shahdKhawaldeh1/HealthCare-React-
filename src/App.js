@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react';
 import { Services } from './Components/Services/Services';
 import { Footer } from './Components/Footer/Footer';
 import FAQContainer from './Components/FAQItem/FAQContainer';
+import { Work } from './Components/Work/Work';
 // import { Contact } from './Components/Contact/Contact';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='home' element={<Home />} />
+        <Route path='info' element={<Work />} />
         <Route path='login' element={<Login info={saveCurrentUser} />} />
         <Route path='register' element={<Register />} />
         <Route path='services' element={<Services />} />

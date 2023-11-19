@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState } from 'react' 
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png'
+// import logo from '../../assets/images/logo.png'
 import './Navbar.css'
 
 export const Navbar = ({ user }) => {
@@ -33,6 +33,9 @@ export const Navbar = ({ user }) => {
               <li>
                 <Link className="nav-item" to="/popular">
                   Popular
+                </Link>
+                <Link className="nav-item" to="/info">
+                 Info
                 </Link>
               </li>
               {user ? (
